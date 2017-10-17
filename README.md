@@ -7,4 +7,4 @@ Builds a Debian build of the latest stable WP-CLI release using [utils/wp-cli-up
 
 To generate a new Debian build, trigger a Travis build on the repo (either by restarting an existing build or making some non-functional change).
 
-This is run outside the main project repo to keep it as an isolated process.
+This is run outside the main project repo to keep it as an isolated process. [Please use the main project's issue tracker](https://github.com/wp-cli/wp-cli/issues) for questions, etc.
