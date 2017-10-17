@@ -32,7 +32,7 @@ script:
 
 after_success:
   - |
-    ls php-wpcli
+    ls .
     # Get the encrypted private key from the repo settings
     echo $WP_CLI_REPO_DEPLOY_KEY | base64 --decode > ~/.ssh/id_rsa
     chmod 600 ~/.ssh/id_rsa
@@ -46,7 +46,7 @@ after_success:
     git config user.email "travis@travis-ci.org"
     git config push.default "current"
     # Copy files into git and commit
-    cp -n ../php-wpcli/php-wpcli*all.deb deb
+    cp -n ../php-wpcli*all.deb deb
     git add deb
     git commit -m "deb build"
     git push
