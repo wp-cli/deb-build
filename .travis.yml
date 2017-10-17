@@ -49,7 +49,7 @@ after_success:
     FNAME=$(basename ../php-wpcli*all.deb)
     cp -n ../php-wpcli*all.deb deb
     rm deb/php-wpcli_latest_all.deb
-    ln -s -v deb/$FNAME deb/php-wpcli_latest_all.deb
+    ln -s -v $FNAME deb/php-wpcli_latest_all.deb
     git add deb
     git commit -m "deb build"
     git push
