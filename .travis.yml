@@ -23,7 +23,7 @@ before_install:
   - sudo apt-get install -qq fakeroot
 
 install:
-  - wget https://github.com/wp-cli/wp-cli/raw/master/utils/wp-cli-updatedeb.sh
+  - wget https://github.com/wp-cli/wp-cli-bundle/raw/master/utils/wp-cli-updatedeb.sh
   - wget http://security.ubuntu.com/ubuntu/pool/main/l/lintian/lintian_2.5.43ubuntu0.1_all.deb
   - sudo dpkg -i lintian_2.5.43ubuntu0.1_all.deb || sudo apt-get install -f
 
